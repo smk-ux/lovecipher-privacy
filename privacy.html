@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoveCipher Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  .last-updated { color: #666; font-size: 14px; }
+  a { color: #b46bff; }
+</style>
+</head>
+<body>
+
+<h1>LoveCipher Privacy Policy</h1>
+<p class="last-updated">Last updated: 27 May 2026</p>
+
+<p>LoveCipher is a keyboard app that lets paired partners exchange messages encoded as emoji. This policy explains what data the app collects, why, and how it's protected.</p>
+
+<h2>Data we collect</h2>
+
+<p>When you create a LoveCipher account, we collect and store:</p>
+<ul>
+  <li><strong>Email address</strong> &mdash; used as your sign-in identifier (Firebase Authentication).</li>
+  <li><strong>Name and username</strong> &mdash; used to identify you to your paired partner.</li>
+  <li><strong>Phone number</strong> (optional) &mdash; alternative sign-in identifier.</li>
+  <li><strong>Profile picture</strong> (optional) &mdash; stored locally on your device only. A reference path is stored in your account profile.</li>
+  <li><strong>Your emoji-to-letter mapping</strong> &mdash; the cipher key shared with your partner.</li>
+  <li><strong>Pairing relationship</strong> &mdash; your partner's user ID, so the cipher can be synced between you both.</li>
+</ul>
+
+<p>This data is stored in Google Firebase (Authentication and Cloud Firestore) and is accessible only to you and your paired partner. Firebase's security rules prevent any other user from reading your data.</p>
+
+<h2>Data we do NOT collect</h2>
+<ul>
+  <li>We do not collect or transmit the content of what you type. Typing happens entirely on your device.</li>
+  <li>We do not collect contacts, location, microphone, or camera (other than for the optional profile picture you pick).</li>
+  <li>We do not use third-party analytics or advertising SDKs.</li>
+  <li>We do not sell your data. We do not share it with third parties.</li>
+</ul>
+
+<h2>Clipboard access</h2>
+<p>LoveCipher's <strong>Floating Decoder</strong> watches the system clipboard for emoji-encoded messages so it can show you the decoded plaintext when you copy a message from a chat app (e.g. WhatsApp).</p>
+<ul>
+  <li>Clipboard reading happens entirely on your device.</li>
+  <li>Clipboard contents are <strong>never transmitted</strong> to LoveCipher's servers or any third party.</li>
+  <li>Decoded text is shown in a floating overlay strip and is discarded as soon as the strip is dismissed.</li>
+  <li>You can disable the floating decoder at any time by turning off Cipher Mode or revoking the "Display over other apps" permission.</li>
+</ul>
+
+<h2>Biometric authentication</h2>
+<p>If you enable Secure Unlock in Settings, LoveCipher will prompt for your device fingerprint, face unlock, or screen-lock credential before revealing decoded text. Biometric data is handled entirely by Android's BiometricPrompt API &mdash; LoveCipher never sees, stores, or transmits your fingerprint or face data.</p>
+
+<h2>Keyboard data</h2>
+<p>LoveCipher is an Input Method Editor (IME). As Android requires for any keyboard, the app can technically see the text you type while the keyboard is active. We use this only to:</p>
+<ul>
+  <li>Encode letters to emojis (when Cipher Mode is on)</li>
+  <li>Show typed text to the host app (e.g. WhatsApp, SMS) &mdash; the same way every keyboard works</li>
+  <li>Generate next-word predictions based on the current word being typed</li>
+</ul>
+<p>What you type is <strong>not logged, stored, or transmitted</strong> by LoveCipher. The next-word prediction dictionary is bundled inside the app; no network calls happen during typing.</p>
+
+<h2>Data retention and deletion</h2>
+<p>Your account data is retained as long as your account is active. To delete your account and all associated data:</p>
+<ol>
+  <li>Open LoveCipher &rarr; Settings &rarr; Log Out</li>
+  <li>Email us at <a href="mailto:lovecipher.support@gmail.com">lovecipher.support@gmail.com</a> with the subject line "Delete my account" from your registered email address.</li>
+  <li>We will delete your profile, your cipher mapping, and your pairing relationship from our servers within 7 days.</li>
+</ol>
+
+<h2>Children's privacy</h2>
+<p>LoveCipher is not directed at children under 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect data from children.</p>
+
+<h2>Changes to this policy</h2>
+<p>We may update this policy from time to time. The "Last updated" date at the top will reflect the most recent change.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy? Email <a href="mailto:lovecipher.support@gmail.com">lovecipher.support@gmail.com</a>.</p>
+
+<p style="color:#888; font-size:13px; margin-top:40px;">
+LoveCipher &mdash; concept by Ananthu Aji, designed by Sree. Built with Firebase. Powered by Claude Code.
+</p>
+
+</body>
+</html>
